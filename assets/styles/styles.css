@@ -275,28 +275,6 @@ body {
 /*end of hero section*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*responsive 1024px*/
 @media screen and (max-width: 1024px) {
 
@@ -359,4 +337,84 @@ body {
         font-size: 1rem;
     }
 
+}
+
+/* Asegura que no haya desbordamiento horizontal */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Services Section */
+#services_section {
+    margin-top: 280px; 
+    background-color: #F5F5DC; 
+    border-radius: 20px;
+    padding: 100px 0; 
+    text-align: center;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Título de la sección */
+.services_title {
+    font-size: 3.5rem;
+    color: #8B0000; 
+    margin-bottom: 45px;
+    width: 100%; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Estilos para cada servicio */
+.service-item {
+    background-color: #FFFFFF;
+    border: 2px solid #8B0000; 
+    border-radius: 20px; 
+    padding: 30px;
+    margin: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    flex: 1 1 300px; 
+    max-width: 100%; 
+}
+
+/* Estilo para pantallas grandes */
+@media (min-width: 769px) {
+    #services_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex: 1 1 calc(50% - 40px); 
+        max-width: calc(50% - 40px);
+    }
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    #services_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex: 1 1 calc(100% - 20px); 
+        padding: 20px;
+        margin: 10px 0; 
+        max-width: calc(100% - 20px); 
+    }
+
+    .service-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .service-item p {
+        font-size: 1.1rem;
+    }
 }
