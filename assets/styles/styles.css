@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: #333333;
+    font-size: 62.5%;
+    line-height: 1.4;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+}
+
+
+/*Header section*/
+.header{
+    background-color: #8B0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 6px 2%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 90px;
+    width: auto ;
+    transition: all 0.3s;
+}
+
+.header a{
+    font-size: 16px;
+    color: #CFAE75;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .menu {
+    display: none;
+    border-radius: 20px;
+    width: 50px;
+}
+
+
+/*header mobile*/
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #8B0000;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a{
+    padding: 5px;
+    font-size: 25px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    color: #CFAE75;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+    transform: scale(1.1);
+    color: #ffffff;
+
+}
+
+
+.header .overlay .close{
+    position: absolute;
+    margin-top: 10px;
+    top: 20px;
+    right: 30px;
+    font-size: 12px;
+    background: #CFAE75;
+    color: #ffffff;
+}
+
+
+.header .menu button{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #CFAE75;
+    box-shadow: none;
+    border: none;
+    background-color: #8B0000;
+    font-size: 16px;
+}
+
+
+
+.header .menu button:hover{
+    transform: scale(1.1);
+    color: #CFAE75;
+}
+
+/*header mobile*/
+
+
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links li a:hover {
+    color: #e0ebfa;
+}
+
+.language-button{
+    align-items: center;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+    top:-15px;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #F5F5DC;
+    border-color: #CFAE75;
+    border-radius: 25px;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #CFAE75;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    border: 2px solid #CFAE75;
+    background: #556B2F;
+    left: 25px;
+}
+
+.check:checked::before{
+    background-color: #FFFFFF;
+}
+
+
+
+/*responsive 1024px*/
+@media screen and (max-width: 1024px) {
+
+    .header .nav-links{
+        display: none;
+    }
+
+    .header .menu{
+        display: inherit;
+    }
+
+    .header .overlay .close{
+        font-size: 30px;
+        top: 0;
+        left: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .header .nav-links li{
+        padding: 0 10px;
+    }
+
+    .header .nav-links li a{
+        font-size: 1.5rem;
+    }
+
+    .header .menu button{
+        font-size: 1.5rem;
+    }
+
+    .header .logo img{
+        height: 50px;
+    }
+}
+
+
+/*responsive 1480px*/
+@media screen and (max-width: 1480px) {
+
+    .header .logo img{
+        height: 90px;
+    }
+
+    .header .logo{
+        display: none;
+    }
+
+}
+
+
+/*responsive 768px*/
+@media screen and (max-width: 768px) {
+
+    .header .nav-links a{
+        padding: 0;
+        font-size: 1rem;
+    }
+
+}
