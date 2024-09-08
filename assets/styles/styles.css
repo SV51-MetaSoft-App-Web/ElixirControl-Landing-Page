@@ -213,7 +213,7 @@ h2 {
 
 /*Hero section*/
 
-#hero_section {
+.hero_section {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -221,9 +221,8 @@ h2 {
     width: 100%;
 }
 
-#hero_section .hero_img .hero-gradient {
-    width: 100%;
-    height: 100%;
+.hero_section .hero_img .hero-gradient {
+
     background-color: black;
     border-radius: 0 0 0 0;
     opacity: 0.5;
@@ -233,7 +232,7 @@ h2 {
     z-index: 1;
 }
 
-#hero_section .hero_img img {
+.hero_section .hero_img img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -245,26 +244,26 @@ h2 {
     border-radius: 0 0 0 0;
 }
 
-#hero_section .hero_text {
+.hero_section .hero_text {
     position: relative;
     padding: 14rem;
     z-index: 2;
 }
 
-#hero_section .hero_text h1 {
+.hero_section .hero_text h1 {
     font-size: 75px;
     color: #F5F5DC;
     margin-bottom: 20px;
 }
 
-#hero_section .hero_text p {
+.hero_section .hero_text p {
     font-size: 2rem;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
-#hero_section .hero_text button {
+.hero_section .hero_text button {
     padding: 2.5rem 2.5rem;
     margin: 7rem 7rem 0 7rem;
     background-color: #CFAE75;
@@ -275,11 +274,147 @@ h2 {
     border-radius: 1rem;
     border: none;
 }
-#hero_section .hero_text button:hover {
+
+.hero_section .hero_text button:hover {
     background-color: #d7b883;
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
+@media (max-width: 1024px) {
+    .hero_section .hero_text {
+        padding: 10rem;
+    }
+
+    .hero_section .hero_text h1 {
+        font-size: 50px;
+    }
+
+    .hero_section .hero_text p {
+        font-size: 1.5rem;
+    }
+
+    .hero_section .hero_text button {
+        padding: 2rem 2rem;
+        margin: 5rem 5rem 0 5rem;
+        font-size: 1.5rem;
+    }
+
+    .hero_section .hero_img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 0 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero_section .hero_text {
+        padding: 5rem;
+    }
+
+    .hero_section .hero_text h1 {
+        font-size: 40px;
+    }
+
+    .hero_section .hero_text p {
+        font-size: 1.2rem;
+    }
+
+    .hero_section .hero_text button {
+        padding: 1.5rem 1.5rem;
+        margin: 3rem 3rem 0 3rem;
+        font-size: 1.2rem;
+    }
+
+    .hero_section .hero_img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 0 0;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+    .hero_section .hero_text {
+        padding: 3rem;
+    }
+
+    .hero_section .hero_text h1 {
+        font-size: 30px;
+    }
+
+    .hero_section .hero_text p {
+        font-size: 1rem;
+    }
+
+    .hero_section .hero_text button {
+        padding: 1rem 1rem;
+        margin: 2rem 2rem 0 2rem;
+        font-size: 1rem;
+    }
+
+    .hero_section .hero_img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 0 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero_section .hero_text {
+        padding: 2rem;
+    }
+
+    .hero_section .hero_text h1 {
+        font-size: 25px;
+    }
+
+    .hero_section .hero_text p {
+        font-size: 1rem;
+    }
+
+    .hero_section .hero_text button {
+        padding: 0.8rem 0.8rem;
+        margin: 1.5rem 1.5rem 0 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .hero_section .hero_img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 0 0;
+    }
+
+}
+
 /*end of hero section*/
 
 
