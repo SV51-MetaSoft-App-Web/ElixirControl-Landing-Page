@@ -390,6 +390,7 @@ header .header-content .language-button .check {
 
 
 
+
 /* Asegura que no haya desbordamiento horizontal */
 
 
@@ -807,20 +808,6 @@ a:hover {
 /*responsive 1024px*/
 @media screen and (max-width: 1024px) {
 
-    .header .nav-links{
-        display: none;
-    }
-
-    .header .menu{
-        display: inherit;
-    }
-
-    .header .overlay .close{
-        font-size: 30px;
-        top: 0;
-        left: 50px;
-    }
-
     .service-item {
         flex: 1 1 calc(50% - 40px);
         max-width: 400px
@@ -842,47 +829,8 @@ a:hover {
 
 }
 
-@media only screen and (max-width: 960px) {
-
-    .header .nav-links li{
-        padding: 0 10px;
-    }
-
-    .header .nav-links li a{
-        font-size: 1.5rem;
-    }
-
-    .header .menu button{
-        font-size: 1.5rem;
-    }
-
-    .header .logo img{
-        height: 50px;
-    }
-}
-
-
-/*responsive 1480px*/
-@media screen and (max-width: 1480px) {
-
-    .header .logo img{
-        height: 90px;
-    }
-
-    .header .logo{
-        display: none;
-    }
-
-}
-
-
 /*responsive 768px*/
 @media screen and (max-width: 768px) {
-
-    .header .nav-links a{
-        padding: 0;
-        font-size: 1rem;
-    }
 
      #section-membership .tarifas {
         flex-direction: column;
