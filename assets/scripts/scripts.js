@@ -11,10 +11,17 @@ function idioma(){
     }
 }
 
-function openNav(){
-    document.getElementById("mobile-menu") .style.width = "100%";
-}
+//*********** NAV TOGGLE MOBILE************
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-function closeNav(){
-    document.getElementById("mobile-menu") .style.width = "0%";
-}
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible");
+
+    if (navMenu.classList.contains("nav-menu_visible")) {
+        navToggle.setAttribute("aria-label", "Cerrar menú");
+    } else {
+        navToggle.setAttribute("aria-label", "Abrir menú");
+    }
+});
+//*********** NAV TOGGLE MOBILE************

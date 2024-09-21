@@ -19,48 +19,43 @@
 </head>
 
 <body>
-    <!--Header-->
-    <header class="header">
-        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-        <div class="overlay" id="mobile-menu">
-            <a onclick="closeNav()" href="#" class="close">Menu</a>
-            <div class="overlay-content">
-                <a href="#hero_section">Home</a>
-                <a href="#services_section">Benefits</a>
-                <a href="#section-membership">Pricing</a>
-                <a href="#about-the-app">About</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact-us">Contact</a>
-                <a href="#about-the-team">About Us</a>
-            </div>
-        </div>
+<!--Header-->
+<header class="header">
+    <div class="header-content">
 
         <div class="logo">
-            <img src="./assets/img/logo-ElixirControl-header.png" alt="Elixir Control Logo">
+            <img src="assets/img/logo-elixir-control.png" alt="logo elixir control">
         </div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#hero_section">Home</a></li>
-                <li><a href="#services_section">Benefits</a></li>
-                <li><a href="#section-membership">Pricing</a></li>
-                <li><a href="#about-the-app">About</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact-us">Contact</a></li>
-                <li><a href="#about-the-team">About Us</a></li>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">Home</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">Benefits</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">Pricing</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">About</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">Testimonials</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">Contact</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="#">About Us</a></li>
             </ul>
         </nav>
 
         <div class="language-button">
-            <img width="32" height="32" src="https://img.icons8.com/color/48/spain.png" alt="spain"/>
-            <input type="checkbox" name="" class="check" checked>
-            <img width="32" height="32" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+            <img width="35"  src="https://img.icons8.com/color/48/spain.png" alt="spain"/>
+            <input class="check"  type="checkbox" name=""  aria-label=""  checked>
+            <img width="35"  src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
         </div>
-    </header>
-    <!--End Header-->
+
+        <button class="nav-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+<!--End Header-->
 
 
-    <!-- Hero section -->
+
+<!-- Hero section -->
     <section id = "hero_section" class = "hero_section">
         <div class = "hero_text">
 
