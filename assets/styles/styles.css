@@ -827,6 +827,34 @@ a:hover {
     width: 100%; /* Responsive width */
 }
 
+.about-the-app-video-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5DC;
+    padding: 20px;
+}
+
+/* Contenedor para el video */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Esto establece la proporción de aspecto de 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 
 
